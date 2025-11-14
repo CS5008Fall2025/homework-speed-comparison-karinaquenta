@@ -191,10 +191,10 @@ Summarize your findings. Where there any surprises?  What did you end up learnin
 For both these questions, are you are free to use what you did as the last section on the team activities/answered as a group, or you can use a different question.
 
 1. Select one technical interview question (this module or previous) from the [technical interview list](https://github.com/CS5008-khoury/Resources/blob/main/TechInterviewQuestions.md) below and answer it in a few sentences. You can use any resource you like to answer the question.
-   What is the difference between git add and git commit? git add tells Git which files you want to include in your next snapshot. It stages the changes but doesn’t save them yet. git commit actually saves those staged changes into the project’s history with a message. So git add selects the changes, and git commit records them.
+   - What is the difference between git add and git commit? git add tells Git which files you want to include in your next snapshot. It stages the changes but doesn’t save them yet. git commit actually saves those staged changes into the project’s history with a message. So git add selects the changes, and git commit records them.
 
 2. Select one coding question (this module or previous) from the [coding practice repository](https://github.com/CS5008-khoury/Resources/blob/main/LeetCodePractice.md) and include a c file with that code with your submission. Make sure to add comments on what you learned, and if you compared your solution with others. 
-   Group Lab done live.
+   - Group Lab done live.
 
 ## References
 
