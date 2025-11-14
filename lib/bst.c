@@ -1,9 +1,9 @@
 /**
  * Basic BST implementation.
  *
- * @author: STUDENT ADD YOUR NAME
+ * @author: Karina Quenta
  * @class: CS 5008
- * @term: UPDATE WITH CURRENT SEMESTER
+ * @term: Fall 2025
  */
 
 #include <stdbool.h>
@@ -52,6 +52,7 @@ void __bst__free_node(BSTNode * node, bool clear) {
         return;
     }
     // STUDENT TODO: update this comment - is this, pre, post, or in order traversal?
+    // This is a post-order traversal: left, right, then free the node itself.
     __bst__free_node(node->left, clear);
     __bst__free_node(node->right, clear);
     if (clear) {
@@ -90,9 +91,33 @@ void clear_and_free_bst(BST * bst) {
  * @param curr the current node
  * @param movie the movie to add 
 */
-void __bst__add(BSTNode * curr, Movie * movie) {
-   // STUDENT TODO: implement this function
+void __bst__add(BSTNode *curr, Movie *movie) {
+    if (curr == NULL || movie == NULL) {
+        return;
+    }
+
+    int cmp = compare_movies(movie, curr->movie);
+
+    // go left
+    if (cmp < 0) {
+        if (curr->left == NULL) {
+            curr->left = __bst__new_node(movie);
+        } else {
+            __bst__add(curr->left, movie);
+        }
+    }
+    // go right
+    else if (cmp > 0) {
+        if (curr->right == NULL) {
+            curr->right = __bst__new_node(movie);
+        } else {
+            __bst__add(curr->right, movie);
+        }
+    }
+
 }
+
+
 /**
  * Adds the given movie into the BST. 
  * Handles the root case, but then calls the recursive helper
@@ -166,7 +191,7 @@ void bst_remove(BST * bst, Movie * movie) {
         return;
     }
     BSTNode * returned = __bst__remove(bst->root, movie);
-    bst->root = returned; // incase the root needs updated, often will be the same.
+    bst->root = returned;
     bst->size--;
 }
 
@@ -184,11 +209,22 @@ void bst_remove(BST * bst, Movie * movie) {
  * @param title the title of the movie to get, if
  * @return the node that was found
 */
-BSTNode * __bst__find(BSTNode * curr, const char * title) {
-   // STUDENT TODO: implement this function
+BSTNode * __bst__find(BSTNode *curr, const char *title) {
+    if (curr == NULL || title == NULL) {
+        return NULL;
+    }
 
-   return NULL; // STUDENT TODO: update this return statement if needed
+    int cmp = strcasecmp(title, curr->movie->title);
+
+    if (cmp == 0) {
+        return curr;
+    } else if (cmp < 0) {
+        return __bst__find(curr->left, title);
+    } else {
+        return __bst__find(curr->right, title);
+    }
 }
+
 
 /**
  * Finds the given movie from the BST. 
@@ -224,7 +260,7 @@ Movie * bst_find(BST * bst, const char * title) {
 char * __bst__update_str(Movie * movie, char * str) {
     char * movie_str;
     if (movie == NULL) {
-        movie_str = (char *) "NULL"; // used by BREATH_FIRST to print null nodes, others ignore this.
+        movie_str = (char *) "NULL"; 
     }else {
         movie_str = movie_to_str(movie);
     }
@@ -234,7 +270,7 @@ char * __bst__update_str(Movie * movie, char * str) {
     }
     strcat(str, movie_str);
     if (movie != NULL) {
-        free(movie_str); // since "NULL" is on the stack, we don't need to free directly
+        free(movie_str); 
     }
     return str;
 }
@@ -249,10 +285,17 @@ char * __bst__update_str(Movie * movie, char * str) {
  * @param str the string to append to
  * @return the string that was appended to
 */
-char * __bst__to_str_postorder(BSTNode * curr, char * str) {
-    // STUDENT TODO: implement this function
+char * __bst__to_str_postorder(BSTNode *curr, char *str) {
+    if (curr == NULL) {
+        return str;
+    }
+    str = __bst__to_str_postorder(curr->left, str);
+    str = __bst__to_str_postorder(curr->right, str);
+    str = __bst__update_str(curr->movie, str);
+
     return str;
 }
+
 
 /**
  * Pre order traversal helper function for converting a BST to a string.
@@ -265,10 +308,17 @@ char * __bst__to_str_postorder(BSTNode * curr, char * str) {
  * @return the string that was appended to
  *
  */
-char * __bst__to_str_preorder(BSTNode * curr, char * str) {
-    // STUDENT TODO: implement this function
+char * __bst__to_str_preorder(BSTNode *curr, char *str) {
+    if (curr == NULL) {
+        return str;
+    }
+    str = __bst__update_str(curr->movie, str);
+    str = __bst__to_str_preorder(curr->left, str);
+    str = __bst__to_str_preorder(curr->right, str);
+
     return str;
 }
+
 
 /**
  * In order traversal helper function for converting a BST to a string.
@@ -281,10 +331,17 @@ char * __bst__to_str_preorder(BSTNode * curr, char * str) {
  * @param str the string to append to
  * @return the string that was appended to
 */
-char * __bst__to_str_inorder(BSTNode * curr, char * str) {
-    // STUDENT TODO: implement this function
+char * __bst__to_str_inorder(BSTNode *curr, char *str) {
+    if (curr == NULL) {
+        return str;
+    }
+    str = __bst__to_str_inorder(curr->left, str);
+    str = __bst__update_str(curr->movie, str);
+    str = __bst__to_str_inorder(curr->right, str);
+
     return str;
 }
+
 
 
 /**
@@ -363,9 +420,18 @@ char * bst_to_str(BST * tree, int traversal) {
  * @param index the current index in the array, used as a pointer to be updated across all recursive calls
  * 
 */
-void __bst__to_sorted_array(BSTNode * curr, Movie ** array, int * index) {
-    // STUDENT TODO: implement this function
+void __bst__to_sorted_array(BSTNode *curr, Movie **array, int *index) {
+    if (curr == NULL) {
+        return;
+    }
+    __bst__to_sorted_array(curr->left, array, index);
+
+    array[*index] = curr->movie;
+    (*index)++;
+
+    __bst__to_sorted_array(curr->right, array, index);
 }
+
 
 /**
  * Converts the given BST to a sorted array.

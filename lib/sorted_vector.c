@@ -1,14 +1,14 @@
 /**
  * Contains functions for the sorted vector struct
  *
- * @author: STUDENT ADD YOUR NAME
+ * @author: Karina Quenta
  * @class: CS 5008
- * @term: UPDATE WITH CURRENT SEMESTER
+ * @term: Fall 2025
 **/
 
 #include "vector.h"
 #include "movie.h"
-
+#include <strings.h>
 
 /**
  * adds a movie to the sorted vector.
@@ -24,7 +24,24 @@
  * @param movie the movie to add
 */
 void add_to_sorted_vector(SortedMovieVector * vector, Movie * movie) {
-    // STUDENT TODO: implement this function
+    if (!vector || !movie)
+    return;
+    //curr # of movies
+    int n = vector->size;
+    size_t index = 0;
+    //as long as the movie to add is greater than curr movies, move forward
+    //we stop once the condition is broken
+    while (index < n){
+        Movie *cur = vector_get(vector,index);
+        if (compare_movies(movie, cur) > 0) {
+            //keep incrementing
+            index++;
+        }else{
+            break;
+        }
+
+    }
+    vector_insert(vector,movie,index);
 }
 
 /**
@@ -43,8 +60,25 @@ void add_to_sorted_vector(SortedMovieVector * vector, Movie * movie) {
  * @return the movie if found, NULL otherwise
  */
 Movie * find_in_sorted_vector(SortedMovieVector * vector, const char * title) {
-    // STUDENT TODO: implement this function
+    int left=0;
+    int right = vector->size - 1;
 
+    while (left <= right) {
+        int mid = (left + right)/2;
+        Movie *mid_movie = vector_get(vector,mid);
+        //comparing titles and not case sensitive
+        int compare = strcasecmp(title, mid_movie->title);
+
+        if (compare == 0){
+            return mid_movie;
+        }else if (compare <0){
+            //searching left half of movies
+            right = mid - 1;
+        }else{
+            //searching right half of movies
+            left = mid + 1;
+        }
+    }
     // if the movie is not found, return NULL
     return NULL;
 }
@@ -65,7 +99,24 @@ Movie * find_in_sorted_vector(SortedMovieVector * vector, const char * title) {
  * @return the movie removed, NULL otherwise
  */
 Movie* sorted_vector_remove(SortedMovieVector *vector, const char *title){
-    // STUDENT TODO: implement this function
+    int left = 0;
+    int right = vector->size -1;
 
+    while (left <= right){
+        int mid = (left + right) /2;
+        Movie *mid_movie = vector_get(vector,mid);
+
+        int compare = strcasecmp(title,mid_movie->title);
+
+        if(compare == 0){
+            //found the movie, so remove it and return it
+            return vector_remove(vector,mid);
+        }
+        else if (compare < 0){
+            right = mid -1;
+        }else{
+            left = mid + 1;
+        }
+    }
     return NULL; // not found
 }

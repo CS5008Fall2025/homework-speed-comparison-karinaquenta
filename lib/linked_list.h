@@ -12,20 +12,20 @@
 #include <stdbool.h>
 #include "movie.h"
 
-typedef struct snode {
-    Movie * movie;
-    struct snode *next;
-} node;
+typedef struct node {
+    Movie *movie;
+    struct node *next;
+} node, Node;
 
 typedef struct linked_list {
-    node *head;
-    node *tail;
+    Node *head;
+    Node *tail;
     int size;
 } LinkedList;
 
 // __ means this should be a hint that it is internal to the linked list implementation, 
 // added here, so sorted_list.c can use it
-node * __ll__new_node(Movie *movie); 
+Node * __ll__new_node(Movie *movie); 
 
 LinkedList *new_linked_list();
 void free_linked_list(LinkedList *list);
