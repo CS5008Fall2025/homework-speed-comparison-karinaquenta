@@ -23,7 +23,7 @@ Don't forget to use latex math notation (example in the table).
 | Sorted Vector             |    O(n)    |    O(n)    |   O(log n)  |    O(1)    |    ---    |    ---   |      ---     |     ---     |      ---     |
 | Sorted Single Linked List |    O(n)    |    O(n)    |     O(n)    |    O(1)    |    ---    |    ---   |      ---     |     ---     |      ---     |
 | Sorted Double Linked List |    O(n)    |    O(n)    |     O(n)    |    O(1)    |    ---    |    ---   |      ---     |     ---     |      ---     |
-| Binary Search Tree        | O(log n)** | O(log n)** |  O(log n)** |    O(n)    |    ---    |    ---   |      ---     |     ---     |      ---     |
+| Binary Search Tree        | O(log n) | O(log n) |  O(log n) |    O(n)    |    ---    |    ---   |      ---     |     ---     |      ---     |
 
 
 For Sort, we are asking for the Big $O$ for taking the current data structure and writing it 'sorted' to a file. However, not the file writes. For example, if you have a vector of 1000 elements, and you want to write it to a file, you would need to sort it first. So, the Big $O$ for this would be the Big $O$ for sorting. For BST, you have to convert the tree to a sequential structure, so the cost of doing that.  
@@ -191,8 +191,10 @@ Summarize your findings. Where there any surprises?  What did you end up learnin
 For both these questions, are you are free to use what you did as the last section on the team activities/answered as a group, or you can use a different question.
 
 1. Select one technical interview question (this module or previous) from the [technical interview list](https://github.com/CS5008-khoury/Resources/blob/main/TechInterviewQuestions.md) below and answer it in a few sentences. You can use any resource you like to answer the question.
+   What is the difference between git add and git commit? git add tells Git which files you want to include in your next snapshot. It stages the changes but doesn’t save them yet. git commit actually saves those staged changes into the project’s history with a message. So git add selects the changes, and git commit records them.
 
 2. Select one coding question (this module or previous) from the [coding practice repository](https://github.com/CS5008-khoury/Resources/blob/main/LeetCodePractice.md) and include a c file with that code with your submission. Make sure to add comments on what you learned, and if you compared your solution with others. 
+   Group Lab done live.
 
 ## References
 

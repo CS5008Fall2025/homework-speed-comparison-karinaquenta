@@ -5794,4 +5794,414 @@
 (DEBUG): Writing bst
 (DEBUG): ...result was 0.008901
 (INFO): Removing movies 94000 in each data structure
-(DEBU
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.982351
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 2.523619
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 20.983910
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.091786
+(INFO): Adding movies 94000 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 5.201619
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.001968
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.981457
+(INFO): Getting movies 94000 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000268
+(DEBUG): Getting from list
+(DEBUG): ...result was 5.112666
+(INFO): Removing movies 94000 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 5.629235
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.002538
+(INFO): Adding movies 94000 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.000964
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002099
+(INFO): Removing movies 94000 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000478
+(DEBUG): Removing from list
+(DEBUG): ...result was 9.103400
+(INFO): Finished running tests
+
+(INFO): Running Tests on 95000 movies
+(INFO): Adding movies 95000 to each data structure
+(DEBUG): Adding to sorted vector
+(DEBUG): ...result was 19.827136
+(DEBUG): Adding to sorted list
+(DEBUG): ...result was 14.968603
+(DEBUG): Adding to bst
+(DEBUG): ..result was 0.046647
+(INFO): Searching for movies 95000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.984747
+(DEBUG): Searching sorted vector
+(DEBUG): ...result was 0.043606
+(DEBUG): Searching sorted list
+(DEBUG): ...result was 24.674225
+(DEBUG): Searching bst
+(DEBUG): ...result was 0.046342
+(INFO): Writing movies 95000 in each data structure
+(DEBUG): Writing sorted vector
+(DEBUG): ...result was 0.007723
+(DEBUG): Writing sorted list
+(DEBUG): ...result was 0.007784
+(DEBUG): Writing bst
+(DEBUG): ...result was 0.009029
+(INFO): Removing movies 95000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.984926
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 2.607759
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 20.869599
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.077524
+(INFO): Adding movies 95000 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 5.231957
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002110
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.985432
+(INFO): Getting movies 95000 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000273
+(DEBUG): Getting from list
+(DEBUG): ...result was 4.976288
+(INFO): Removing movies 95000 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 5.758724
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.002589
+(INFO): Adding movies 95000 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.000926
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002387
+(INFO): Removing movies 95000 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000484
+(DEBUG): Removing from list
+(DEBUG): ...result was 11.666573
+(INFO): Finished running tests
+
+(INFO): Running Tests on 96000 movies
+(INFO): Adding movies 96000 to each data structure
+(DEBUG): Adding to sorted vector
+(DEBUG): ...result was 20.007403
+(DEBUG): Adding to sorted list
+(DEBUG): ...result was 16.287375
+(DEBUG): Adding to bst
+(DEBUG): ..result was 0.048199
+(INFO): Searching for movies 96000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.988167
+(DEBUG): Searching sorted vector
+(DEBUG): ...result was 0.050519
+(DEBUG): Searching sorted list
+(DEBUG): ...result was 24.761624
+(DEBUG): Searching bst
+(DEBUG): ...result was 0.046088
+(INFO): Writing movies 96000 in each data structure
+(DEBUG): Writing sorted vector
+(DEBUG): ...result was 0.007695
+(DEBUG): Writing sorted list
+(DEBUG): ...result was 0.007838
+(DEBUG): Writing bst
+(DEBUG): ...result was 0.009321
+(INFO): Removing movies 96000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.987573
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 3.060255
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 21.154769
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.075584
+(INFO): Adding movies 96000 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 5.349637
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002995
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.987625
+(INFO): Getting movies 96000 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000270
+(DEBUG): Getting from list
+(DEBUG): ...result was 12.205841
+(INFO): Removing movies 96000 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 5.862918
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.003172
+(INFO): Adding movies 96000 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.001038
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002517
+(INFO): Removing movies 96000 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000488
+(DEBUG): Removing from list
+(DEBUG): ...result was 15.934362
+(INFO): Finished running tests
+
+(INFO): Running Tests on 97000 movies
+(INFO): Adding movies 97000 to each data structure
+(DEBUG): Adding to sorted vector
+(DEBUG): ...result was 20.366188
+(DEBUG): Adding to sorted list
+(DEBUG): ...result was 15.614191
+(DEBUG): Adding to bst
+(DEBUG): ..result was 0.047204
+(INFO): Searching for movies 97000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.991134
+(DEBUG): Searching sorted vector
+(DEBUG): ...result was 0.045778
+(DEBUG): Searching sorted list
+(DEBUG): ...result was 25.649933
+(DEBUG): Searching bst
+(DEBUG): ...result was 0.052642
+(INFO): Writing movies 97000 in each data structure
+(DEBUG): Writing sorted vector
+(DEBUG): ...result was 0.008032
+(DEBUG): Writing sorted list
+(DEBUG): ...result was 0.008573
+(DEBUG): Writing bst
+(DEBUG): ...result was 0.009512
+(INFO): Removing movies 97000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.991134
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 2.684492
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 21.787599
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.076947
+(INFO): Adding movies 97000 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 6.514424
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002872
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.990918
+(INFO): Getting movies 97000 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000314
+(DEBUG): Getting from list
+(DEBUG): ...result was 9.156672
+(INFO): Removing movies 97000 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 6.941321
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.002941
+(INFO): Adding movies 97000 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.000777
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002457
+(INFO): Removing movies 97000 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000495
+(DEBUG): Removing from list
+(DEBUG): ...result was 11.868422
+(INFO): Finished running tests
+
+(INFO): Running Tests on 98000 movies
+(INFO): Adding movies 98000 to each data structure
+(DEBUG): Adding to sorted vector
+(DEBUG): ...result was 20.780248
+(DEBUG): Adding to sorted list
+(DEBUG): ...result was 16.574128
+(DEBUG): Adding to bst
+(DEBUG): ..result was 0.048039
+(INFO): Searching for movies 98000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.994245
+(DEBUG): Searching sorted vector
+(DEBUG): ...result was 0.043545
+(DEBUG): Searching sorted list
+(DEBUG): ...result was 26.287873
+(DEBUG): Searching bst
+(DEBUG): ...result was 0.123942
+(INFO): Writing movies 98000 in each data structure
+(DEBUG): Writing sorted vector
+(DEBUG): ...result was 0.008870
+(DEBUG): Writing sorted list
+(DEBUG): ...result was 0.009994
+(DEBUG): Writing bst
+(DEBUG): ...result was 0.011063
+(INFO): Removing movies 98000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.993724
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 2.809854
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 23.372143
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.079712
+(INFO): Adding movies 98000 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 5.661447
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002932
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.994316
+(INFO): Getting movies 98000 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000268
+(DEBUG): Getting from list
+(DEBUG): ...result was 12.248071
+(INFO): Removing movies 98000 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 6.106704
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.003019
+(INFO): Adding movies 98000 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.000767
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002379
+(INFO): Removing movies 98000 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000499
+(DEBUG): Removing from list
+(DEBUG): ...result was 8.442532
+(INFO): Finished running tests
+
+(INFO): Running Tests on 99000 movies
+(INFO): Adding movies 99000 to each data structure
+(DEBUG): Adding to sorted vector
+(DEBUG): ...result was 21.355208
+(DEBUG): Adding to sorted list
+(DEBUG): ...result was 16.282366
+(DEBUG): Adding to bst
+(DEBUG): ..result was 0.047711
+(INFO): Searching for movies 99000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.997061
+(DEBUG): Searching sorted vector
+(DEBUG): ...result was 0.043736
+(DEBUG): Searching sorted list
+(DEBUG): ...result was 26.941834
+(DEBUG): Searching bst
+(DEBUG): ...result was 0.047700
+(INFO): Writing movies 99000 in each data structure
+(DEBUG): Writing sorted vector
+(DEBUG): ...result was 0.008063
+(DEBUG): Writing sorted list
+(DEBUG): ...result was 0.008021
+(DEBUG): Writing bst
+(DEBUG): ...result was 0.009435
+(INFO): Removing movies 99000 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.997131
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 2.816738
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 23.336821
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.079409
+(INFO): Adding movies 99000 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 5.730559
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.003026
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 0.996970
+(INFO): Getting movies 99000 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000270
+(DEBUG): Getting from list
+(DEBUG): ...result was 13.991682
+(INFO): Removing movies 99000 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 6.312097
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.003611
+(INFO): Adding movies 99000 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.000850
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.002583
+(INFO): Removing movies 99000 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000505
+(DEBUG): Removing from list
+(DEBUG): ...result was 8.489015
+(INFO): Finished running tests
+
+(INFO): Running Tests on 99999 movies
+(INFO): Adding movies 99999 to each data structure
+(DEBUG): Adding to sorted vector
+(DEBUG): ...result was 21.740209
+(DEBUG): Adding to sorted list
+(DEBUG): ...result was 17.247263
+(DEBUG): Adding to bst
+(DEBUG): ..result was 0.048368
+(INFO): Searching for movies 99999 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 1.000000
+(DEBUG): Searching sorted vector
+(DEBUG): ...result was 0.044242
+(DEBUG): Searching sorted list
+(DEBUG): ...result was 27.318897
+(DEBUG): Searching bst
+(DEBUG): ...result was 0.052759
+(INFO): Writing movies 99999 in each data structure
+(DEBUG): Writing sorted vector
+(DEBUG): ...result was 0.009152
+(DEBUG): Writing sorted list
+(DEBUG): ...result was 0.008625
+(DEBUG): Writing bst
+(DEBUG): ...result was 0.009766
+(INFO): Removing movies 99999 in each data structure
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 1.000000
+(DEBUG): Removing sorted vector
+(DEBUG): ...result was 2.881711
+(DEBUG): Removing sorted list
+(DEBUG): ...result was 23.598914
+(DEBUG): Removing bst
+(DEBUG): ...result was 0.086494
+(INFO): Adding movies 99999 to front of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 5.854703
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.003002
+(DEBUG): Building sample indexes
+(DEBUG): ... Percent that are findable: 1.000000
+(INFO): Getting movies 99999 from each data structure
+(DEBUG): Getting from vector
+(DEBUG): ...result was 0.000279
+(DEBUG): Getting from list
+(DEBUG): ...result was 14.364846
+(INFO): Removing movies 99999 from front of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 6.331534
+(DEBUG): Removing from list
+(DEBUG): ...result was 0.003421
+(INFO): Adding movies 99999 to back of each data structure
+(DEBUG): Adding to vector
+(DEBUG): ...result was 0.000913
+(DEBUG): Adding to list
+(DEBUG): ...result was 0.003109
+(INFO): Removing movies 99999 from back of each data structure
+(DEBUG): Removing from vector
+(DEBUG): ...result was 0.000517
+(DEBUG): Removing from list
+(DEBUG): ...result was 12.923561
+(INFO): Finished running tests
+
+(INFO): Finished writing results_100k.csv with 101 lines
+(INFO): Testing completed successfully
